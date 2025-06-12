@@ -1,0 +1,597 @@
+@font-face {
+  font-family: 'Spartan';
+  src: url('assets/font/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+
+  color: black;
+
+}
+
+body {
+  font-family: 'Spartan', sans-serif;
+  font-size: 20px;
+}
+
+#header {
+
+  background-color: white;
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+  border-bottom: 1px solid #ccc; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 15vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+}   
+
+#logoDiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+
+}
+
+#logoNavbar {
+
+    width: 40px;
+    height: auto;
+
+}
+
+.carrito {
+
+    width: 30px;
+    height: auto;
+
+}
+
+#menu {
+
+    width: 30px;
+    height: auto;
+
+}
+
+#navbar{
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navbar li{
+
+  font-size: 25px;
+  position: relative;
+
+}
+
+#navbar li a{
+
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+#hero{
+
+  background-image: url(assets/imagenes/hero.jpg);
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  padding-left: 100px;
+  gap: 10px;
+  background-size: cover !important;
+  background-position: 50% 50%; 
+  padding-top: 0;
+  padding-bottom: 0;
+
+}
+
+#hero h4{
+
+  font-size: 60px;
+  font-weight: 600;
+
+}
+
+#hero p{
+
+  font-size: 25px;
+
+}
+
+#hero button{
+
+  cursor: pointer;
+  font: inherit;
+  width: 15vw;
+  margin-left: 5vw;
+  background-color:#0a0a23;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
+}
+
+#feature{
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.section-index{
+
+  padding: 45px 5vw;
+
+}
+
+.feature-box{
+
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  height: auto;
+  border: 1px solid white;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+  gap: 15px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.feature-box:hover{
+
+  transform: scale(1.1);
+
+}
+
+.feature-box img{
+
+  width: 100%;
+
+}
+
+.feature-box h6{
+
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  padding: 4px 4px 4px 4px;
+  background-color: black;
+  color: white;
+
+}
+
+#masVendidos{
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+#masVendidos h2{
+
+  text-align: center;
+  font-size: 40px;
+
+}
+
+#masVendidos p{
+
+  text-align: center;
+  font-size: 20px;
+  color: #63636e;
+
+}
+
+.contenedorProductos{
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+
+}
+
+.producto{
+
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 22%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  gap: 5px;
+  border: 1px solid #ccc;
+  position: relative;
+
+}
+
+.producto h5{
+
+  margin-left: 5px;
+
+}
+
+.producto p{
+
+  text-align: left !important;
+  color: green !important;
+  font-weight: 600;
+  font-size: 25px !important;
+  margin-left: 5px;
+
+}
+
+.producto img{
+
+  width: 100%;
+  height: auto;
+
+}
+
+.producto button{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #d3d3f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+}
+.producto button:hover{
+
+  background-color: rgb(51, 236, 51);
+  transform: scale(1.1);
+}
+
+.producto button img{
+
+  width: 20px;
+  height: auto;
+
+}
+
+#banner{
+
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+  color: white;
+  background-image: url(assets/imagenes/BannerImagen.jpg);
+
+}
+
+#banner p{
+
+  font-size: 22px;
+
+}
+
+#banner h2{
+
+  font-size: 40px;
+
+}
+
+#banner button{
+
+  border: none;
+  font-weight: 600;
+  font-size: 20px ;
+  background: black;
+  color: white;
+  padding: 15px 15px;
+  border-radius:10px; 
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+
+#banner button:hover{
+
+  transform: scale(1.1);
+
+}
+
+#banner2{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#banner2 > :nth-child(1){
+
+  background-image: url(assets/imagenes/Banner2Image1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+#banner2 > :nth-child(2){
+
+  background-image: url(assets/imagenes/Banner2Image2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.banner2Elemento{
+
+  flex: 0 0 48%;
+  height: 50vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  gap: 5px;
+
+}
+
+.banner2Elemento span{
+
+  font-size: 20px;
+
+}
+
+.banner2Elemento h6{
+
+  font-size: 60px;
+  font-weight: 900;
+
+}
+
+.banner2Elemento button {
+  
+  cursor: pointer;
+  font: inherit;
+  width: 15vw;
+  background-color: white;
+  color: black;
+  border:none; 
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in;
+
+}
+
+.banner2Elemento button:hover {
+  
+  background-color: #15a1ff;
+
+
+}
+
+#newsletter{
+
+  background-image: url(assets/imagenes/NewsletterImage.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+
+}
+
+#newsletter #textoDiv h6{
+
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+#newsletter #textoDiv span{
+
+  color: #fbff00;
+
+}
+
+#newsletter form{
+
+  display: flex;
+  gap: 0px;
+
+}
+
+#newsletter form input{
+
+  font-family: inherit;
+  width: 25vw;
+  padding: 10px 10px;
+  font-size: 20px;
+  border: none;
+
+}
+
+#newsletter form button{
+
+  font-family: inherit;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #bdbdbe;
+
+}
+
+footer{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+footer #contactoDiv{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+footer #contactoDiv h6{
+  
+  font-size: 20px;
+  font-weight: 800;
+
+}
+
+footer #contactoDiv p{
+  
+  font-size: 15px;
+
+}
+
+footer #contactoDiv span{
+  
+  color: #85898a !important;
+
+}
+
+footer #redesSocialesDiv{
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+footer #redesSocialesDiv h6{
+  
+  font-size: 20px;
+  font-weight: 800;
+
+}
+
+footer #redesSocialesDiv #logosRedesSociales{
+
+  display: flex;
+  gap: 10px;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  #navbar {
+
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: #dee5e7;
+    position: fixed;
+    top: 0px;
+    right: -300px; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    gap: 15px;
+    padding: 30px 30px;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  #navbar.activo{
+
+    right: 0px !important;
+
+  }
+
+  #navbar .carrito{
+
+      display: none;
+
+  }
+
+  #mobileNavBar{
+
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60vw;
+
+  }
+
+  #navBarIconosMobiles{
+
+    display: flex;
+    gap: 15px;
+
+  }
+
+  #eliminar{
+
+  }
+
+}
+
+
+#mobileNavBar{
+
+  display: none;
+
+}
+
+#eliminar{
+
+  display: none;
+  width: 30px;
+  height: auto;
+
+}
+
