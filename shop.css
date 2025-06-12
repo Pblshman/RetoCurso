@@ -1,0 +1,392 @@
+@font-face {
+  font-family: 'Spartan';
+  src: url('assets/font/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.section-index{
+
+  padding: 45px 5vw;
+
+}
+
+* {box-sizing: border-box;}
+
+a {
+
+  color: black;
+
+}
+
+html, body {
+
+    overflow-x: hidden;
+
+}
+
+body {
+
+  font-family: 'Spartan', sans-serif;
+  font-size: 20px;
+
+}
+
+#header {
+
+  background-color: white;
+  display: flex;
+  gap: 10vw;
+  align-items: center;
+  border-bottom: 1px solid #ccc; 
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 15vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+}   
+
+#logoDiv{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+
+}
+
+#logoNavbar {
+
+    width: 40px;
+    height: auto;
+
+}
+
+.carrito {
+
+    width: 30px;
+    height: auto;
+
+}
+
+#menu {
+
+    width: 30px;
+    height: auto;
+
+}
+
+#navbar{
+  width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#navbar li{
+
+  font-size: 25px;
+  position: relative;
+
+}
+
+#navbar li a{
+
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 50%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 0px;
+}
+
+#mobileNavBar{
+
+  display: none;
+
+}
+
+#idEliminar{
+
+  display: none;
+
+}
+
+#eliminar{
+
+  width: 30px;
+  height: auto;
+
+}
+
+#banner{
+
+    background-image: url(assets/imagenes/jess-bailey-UHqfUTDmdC4-unsplash.jpg);  
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 40vh;
+    color: white;
+
+}
+
+#banner h6{
+
+    font-weight: 700;
+    font-size: 45px;
+
+}
+
+#banner p{
+
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+#newsletter{
+
+  background-image: url(assets/imagenes/NewsletterImage.jpg);  
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 25vh;
+  overflow: hidden;
+
+}
+
+#newsletter #textoDiv h6{
+
+  font-size: 30px;
+  font-weight: 700;
+
+}
+
+#newsletter #textoDiv span{
+
+  color: #fbff00;
+
+}
+
+#newsletter form{
+
+  display: flex;
+  gap: 0px;
+
+}
+
+#newsletter form input{
+
+  font-family: inherit;
+  width: 25vw;
+  padding: 10px 10px;
+  font-size: 20px;
+  border: none;
+
+}
+
+#newsletter form button{
+
+  font-family: inherit;
+  padding: 10px 10px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #bdbdbe;
+
+}
+
+footer{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+footer #contactoDiv{
+  
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+footer #contactoDiv h6{
+  
+  font-size: 20px;
+  font-weight: 800;
+
+}
+
+footer #contactoDiv p{
+  
+  font-size: 15px;
+
+}
+
+footer #contactoDiv span{
+  
+  color: #85898a !important;
+
+}
+
+footer #redesSocialesDiv{
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+
+footer #redesSocialesDiv h6{
+  
+  font-size: 20px;
+  font-weight: 800;
+
+}
+
+footer #redesSocialesDiv #logosRedesSociales{
+
+  display: flex;
+  gap: 10px;
+
+}
+
+#divShop{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#ajustarBusqueda{
+
+    background: #eef1f1;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#ajustarBusqueda{
+
+    background: #eef1f1;
+    display: flex;
+    flex-wrap: wrap;
+    height: 15vh;
+    padding: 25px 25px;
+    justify-content: space-between;
+
+}
+
+#ajustarBusqueda select{
+
+    height: 5vh;
+    font-family: inherit;
+    flex: 0 0 30%;
+
+}
+
+#divProductos{
+
+    background-color: #fcf9f9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  #navbar{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #ecf1f1;
+    position: fixed;
+    width: 250px;
+    right: -250px;
+    top: 0px;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 20px;
+    gap: 15px;
+    transition: all 0.3s ease-in-out;
+
+  }
+
+  #navbar.activo{
+
+    right: 0px !important;
+
+  }
+
+  #navbar .carrito{
+
+      display: none;
+
+  }
+
+  #mobileNavBar{
+
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60vw;
+
+  }
+
+  #navBarIconosMobiles{
+
+    display: flex;
+    gap: 15px;
+
+  }
+
+  #idEliminar{
+
+    display: inline !important;
+    position: absolute !important;
+    right: 15px;
+    top: 15px;
+
+  }
+
+    #newsletter{
+
+    height: 50vh;
+
+  }
+
+  #newsletter #textoDiv h6{
+
+    font-size: 1.4rem;
+
+  }
+
+}
