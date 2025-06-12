@@ -348,6 +348,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 
 }
 
@@ -412,7 +413,6 @@ body {
   
   background-color: #15a1ff;
 
-
 }
 
 #newsletter{
@@ -425,6 +425,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 25vh;
+  overflow: hidden;
 
 }
 
@@ -528,23 +529,7 @@ footer #redesSocialesDiv #logosRedesSociales{
 
 @media only screen and (max-width: 767px) {
 
-  #navbar {
 
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: #dee5e7;
-    position: fixed;
-    top: 0px;
-    right: -200px; 
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 100%;
-    gap: 15px;
-    padding: 30px 30px;
-    transition: all 0.3s ease-in-out;
-
-  }
 
   #navbar.activo{
 
