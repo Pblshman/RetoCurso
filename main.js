@@ -1,4 +1,5 @@
 let menu = document.getElementById('menu');
+let cerrarMenu = document.getElementById('eliminar');
 let navBar = document.getElementById('navbar');
 
 if(menu){
@@ -9,6 +10,14 @@ if(menu){
 
     })
 
-    console.log("few");
+}
+
+if(cerrarMenu){
+
+    cerrarMenu.addEventListener('click', () => {
+
+        navBar.classList.remove('activo');
+
+    })
 
 }
