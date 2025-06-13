@@ -314,8 +314,54 @@ footer #redesSocialesDiv #logosRedesSociales{
 
     background-color: #fcf9f9;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+
+}
+
+.producto{
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.producto .imagenProductoDiv{
+
+    width: 100%;
+    height: auto;
+
+}
+
+.producto .imagenProductoDiv img{
+
+    width: 100%;
+    height: auto;
+
+}
+
+.producto .textoInfo{
+
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.producto h3{
+
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+.producto p{
+
+    font-weight: 600;
+    font-size: 19px;
+    color: #087404;
 
 }
 
